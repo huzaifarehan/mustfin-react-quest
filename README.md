@@ -1,4 +1,4 @@
-# MustFin React Developer Test Project
+# MustFin React Developer Quest Project
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ Follow these steps to set up and run the project:
 
 4. **Start Development server:**
    ```bash
-   yarn start
+   yarn dev
 
 
 
