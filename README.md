@@ -10,7 +10,7 @@ Follow these steps to set up and run the project:
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd mustfin-react-test
+   cd mustfin-react-quest
 
 
 
