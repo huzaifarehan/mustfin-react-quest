@@ -10,7 +10,8 @@ Follow these steps to set up and run the project:
 
 2. **Navigate to the Project Directory:**
    ```bash
-   yarn
+   cd mustfin-react-test
+
 
 
 3. **Install Dependencies:**
