@@ -205,11 +205,11 @@ export function ManageApplications<TData, TValue>({
         <Button className="w-[100px] bg-[#2a3958] px-[17px] rounded-[10px]">
           등록
         </Button>
-        <div className="sm:flex gap-1 items-center mb-2">
-          <div className="mr-3">
+        <div className="sm:flex gap-1 items-center">
+          <div className="mb-2 mr-3">
             선택한 {table.getFilteredSelectedRowModel().rows.length} 건
           </div>
-          <div className="">
+          <div className="mb-2">
             <Select onValueChange={(value) => setApprovalType(value)}>
               <SelectTrigger className="sm:w-[150px]">
                 <SelectValue placeholder="승인상태 변경" />
@@ -220,7 +220,7 @@ export function ManageApplications<TData, TValue>({
               </SelectContent>
             </Select>
           </div>
-          <div className="">
+          <div className="mb-2">
             <Button
               onClick={handleSave}
               className="w-[100px] bg-[#2a3958] px-[17px] rounded-[10px]"
