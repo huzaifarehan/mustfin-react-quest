@@ -61,27 +61,27 @@ export function InvestmentTypeUpdateModal({
   return (
     <Dialog open={show} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[800px] p-0 ">
-        <DialogHeader className="p-5 border-b">
+        <DialogHeader className="px-6 pt-7 pb-8 border-b">
           <DialogTitle>투자유형 변경</DialogTitle>
         </DialogHeader>
-        <div className="grid px-5">
-          <div className="grid grid-cols-4 sm:grid-cols-5 items-center border border-b-0">
-            <div className="bg-[#eef0f4] p-3 border-0 border-b border-white">
+        <div className="grid px-5 mb-2">
+          <div className="grid grid-cols-4 sm:grid-cols-9 items-center border border-b-0">
+            <div className="bg-[#eef0f4] col-span-1 sm:col-span-2 px-5 py-3 border-0 border-b border-white">
               회원번호
             </div>
-            <div className="col-span-3 sm:col-span-4 px-4">abc111</div>
+            <div className="col-span-3 sm:col-span-7 px-4">abc111</div>
           </div>
-          <div className="grid grid-cols-4 sm:grid-cols-5 items-center border border-b-0">
-            <div className="bg-[#eef0f4] p-3 border-0 border-b border-white">
+          <div className="grid grid-cols-4 sm:grid-cols-9 items-center border border-b-0">
+            <div className="bg-[#eef0f4] col-span-1 sm:col-span-2 px-5 py-3 border-0 border-b border-white">
               회원명/법인명
             </div>
-            <div className="col-span-3 sm:col-span-4 px-4">김길동</div>
+            <div className="col-span-3 sm:col-span-7 px-4">김길동</div>
           </div>
-          <div className="grid grid-cols-4 sm:grid-cols-5 items-center border border-b-0">
-            <div className="bg-[#eef0f4] p-3 border-0 border-b border-white">
+          <div className="grid grid-cols-4 sm:grid-cols-9 items-center border border-b-0">
+            <div className="bg-[#eef0f4] col-span-1 sm:col-span-2 px-5 py-3 border-0 border-b border-white">
               투자유형
             </div>
-            <div className="col-span-3 smcol-span-4 px-2">
+            <div className="col-span-3 sm:col-span-7 px-2">
               <Select onValueChange={(value) => setInvestmentType(value)}>
                 <SelectTrigger className="sm:w-[280px]">
                   <SelectValue placeholder="선택하다" />
@@ -97,16 +97,16 @@ export function InvestmentTypeUpdateModal({
               </Select>
             </div>
           </div>
-          <div className="grid grid-cols-4 sm:grid-cols-5 items-center border">
-            <div className="bg-[#eef0f4] p-3">서류첨부</div>
-            <div className="col-span-3 sm:col-span-4 px-2">
+          <div className="grid grid-cols-4 sm:grid-cols-9 items-center border">
+            <div className="bg-[#eef0f4] col-span-1 sm:col-span-2 px-5 py-3">서류첨부</div>
+            <div className="col-span-3 sm:col-span-7 px-2">
               <Button variant="secondary" className="border">
                 파일 선택
               </Button>
             </div>
             {/* <Input id="attachDocument" type="file" /> */}
           </div>
-          <ul className="list-disc list-inside py-3">
+          <ul className="list-disc list-inside text-xs pl-3 py-3">
             <li>파일 형식은 jpg, jpeg, gif, png, pdf만 가능합니다.</li>
             <li>최대 10개, 100MB까지 등록이 가능합니다.</li>
           </ul>
@@ -114,14 +114,14 @@ export function InvestmentTypeUpdateModal({
         <DialogFooter className="sm:justify-center gap-3 sm:gap-1 p-5 border-t">
           <Button
             onClick={handleCheck}
-            className="sm:w-[170px] px-[17px] font-bold bg-[#2a3958] rounded-[10px]"
+            className="sm:w-[160px] sm:h-12 px-[17px] font-bold bg-[#2a3958] rounded-[10px]"
           >
             저장
           </Button>
           <Button
             onClick={onClose}
             variant="outline"
-            className="sm:w-[170px] px-[17px] font-bold border rounded-[10px]"
+            className="sm:w-[160px] sm:h-12 px-[17px] font-bold border rounded-[10px]"
           >
             취소
           </Button>

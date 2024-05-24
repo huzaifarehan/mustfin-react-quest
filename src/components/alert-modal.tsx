@@ -62,7 +62,7 @@ export function AlertModal({
             </AlertDialogCancel>
           </AlertDialogTitle>
         </AlertDialogHeader>
-        <AlertDialogDescription className="mb-2 text-gray-900">
+        <AlertDialogDescription className="mb-4 text-xl font-bold text-gray-900">
           {description}
         </AlertDialogDescription>
         <AlertDialogFooter className="sm:flex sm:justify-center gap-3 sm:gap-1">

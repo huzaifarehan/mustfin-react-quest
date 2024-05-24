@@ -136,10 +136,10 @@ export function ManageApplications<TData, TValue>({
 
   return (
     <div className="w-full">
-      <div className="sm:flex items-center gap-2 border-b mb-3">
+      <div className="sm:flex items-center gap-1 border-b mb-3">
         <div className="grow ">
-          <strong className="me-2">신청 목록</strong>{" "}
-          <small>
+          <strong className="me-2 text-xl">신청 목록</strong>{" "}
+          <small className="text-sm">
             (총 {table.getRowCount()}명 | 승인대기{" "}
             <span className="text-red-500 underline">{1}</span>
             건)
@@ -201,15 +201,15 @@ export function ManageApplications<TData, TValue>({
         </div>
       </div>
 
-      <div className="sm:flex justify-between items-center">
+      <div className="sm:flex justify-between">
         <Button className="w-[100px] bg-[#2a3958] px-[17px] rounded-[10px]">
           등록
         </Button>
-        <div className="sm:flex gap-2 items-center">
-          <div className="mb-3">
+        <div className="sm:flex gap-1 items-center mb-2">
+          <div className="mr-3">
             선택한 {table.getFilteredSelectedRowModel().rows.length} 건
           </div>
-          <div className="mb-3">
+          <div className="">
             <Select onValueChange={(value) => setApprovalType(value)}>
               <SelectTrigger className="sm:w-[150px]">
                 <SelectValue placeholder="승인상태 변경" />
@@ -220,7 +220,7 @@ export function ManageApplications<TData, TValue>({
               </SelectContent>
             </Select>
           </div>
-          <div className="mb-3">
+          <div className="">
             <Button
               onClick={handleSave}
               className="w-[100px] bg-[#2a3958] px-[17px] rounded-[10px]"

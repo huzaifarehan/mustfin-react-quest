@@ -5,8 +5,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 export default function Home() {
   return (
     <div className="sm:container">
-      <div className="border-b py-1 mb-3">
-        <strong className="me-2">회원상세</strong>{" "}
+      <div className="border-b py-1 pb-4 mb-2">
+        <strong className="me-3 text-2xl">회원상세</strong>{" "}
         <small className="text-[#FF4D4F]">*필수항목</small>
       </div>
 

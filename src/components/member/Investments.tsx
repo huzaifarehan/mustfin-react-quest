@@ -6,7 +6,7 @@ export default async function Investments() {
   const data = await getInvestmentApplications();
 
   return (
-    <div className="py-5">
+    <div className="py-6">
       <ManageApplications columns={columns} data={data} />
     </div>
   );

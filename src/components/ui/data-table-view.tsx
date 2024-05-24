@@ -26,7 +26,7 @@ export function DataTableView<TData>({ table }: DataTableViewProps<TData>) {
                 return (
                   <TableHead
                     key={header.id}
-                    className="text-center bg-secondary text-gray-700 font-semibold"
+                    className="text-center text-base bg-secondary text-gray-700 font-semibold"
                   >
                     {header.isPlaceholder
                       ? null
